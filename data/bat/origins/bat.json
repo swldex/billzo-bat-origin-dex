@@ -1,0 +1,22 @@
+{
+	"powers": [
+		"bat:fly",
+		"bat:glow",
+		"bat:vulnerable",
+		"bat:cave",
+		"bat:hang",
+		"bat:short",
+		"bat:blind",
+		"bat:skin",
+		"origins:fall_immunity",
+		"origins:more_exhaustion",
+		"origins:light_armor",
+		"origins:no_shield"
+
+	],
+	"icon": "minecraft:bat_spawn_egg",
+	"order": 10,
+	"impact": 3,
+	"name": "Bat",
+	"description": "Squeak squeak squeak. Squeak?"
+}

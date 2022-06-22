@@ -1,0 +1,41 @@
+{
+    "type":"origins:multiple",
+    "levitate":{
+        "type":"origins:action_over_time",
+        "entity_action":{
+            "type":"origins:apply_effect",
+            "effect":{
+                "effect":"minecraft:levitation",
+                "duration":100,
+                "amplifier":0,
+                "show_particles":false,
+                "show_icon":false,
+                "is_ambient":true
+            }
+        },
+        "interval":1,
+        "condition":{
+            "type": "origins:block_collision",
+            "offset_x": 0,
+            "offset_y": 0.1,
+            "offset_z": 0
+        }
+    },
+    "stoplevitation":{
+        "type":"origins:action_over_time",
+        "entity_action":{
+            "type":"origins:clear_effect",
+            "effect":"minecraft:levitation"
+        },
+        "interval":1,
+        "condition":{
+            "type": "origins:block_collision",
+            "offset_x": 0,
+            "offset_y": 0.1,
+            "offset_z": 0,
+            "inverted":true
+        }
+    },
+    "name":"Bat hang",
+    "description":"You can hang on the bottom of blocks."
+}

@@ -1,0 +1,58 @@
+{
+    "type": "origins:multiple",
+    "timer": {
+        "type": "origins:cooldown",
+        "cooldown": 300,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 2
+        }
+    },
+    "active": {
+        "type": "origins:active_self",
+        "cooldown": 300,
+        "hud_render": {
+            "should_render": false
+        },
+        "entity_action": {
+
+        "type":"origins:and",
+        "actions":[
+            {
+                "type":"origins:execute_command",
+                "command":"effect give @e[distance=..60,type=!minecraft:player] minecraft:glowing 10 1",
+                "permission_level":4
+            },
+            {
+                "type":"origins:execute_command",
+                "command":"effect give @a[distance=..60,type=!minecraft:player] minecraft:glowing 10 1",
+                "permission_level":4
+            },
+            {
+                "type":"origins:execute_command",
+                "command":"execute as @a[distance=..60] run playsound minecraft:entity.bat.ambient master @s",
+                "permission_level":4
+            },
+            {
+                        "type": "origins:trigger_cooldown",
+                        "power": "*:*_timer"
+            }
+        ]
+    },
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "color": {
+        "type": "origins:effect_immunity",
+        "effect": "minecraft:blindness",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_timer",
+            "compare_to": 190,
+            "comparison": ">="
+        }
+    },
+    "name": "Sneak",
+    "description": "When you press your primary key, every player near you glows for 10 seconds."
+}

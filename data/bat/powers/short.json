@@ -1,0 +1,116 @@
+{
+	"type": "origins:action_on_callback",
+	"name": "Short",
+	"description": "You're 1.50 blocks tall.",
+	"execute_chosen_when_orb": true,
+	"entity_action_lost": {
+		"type": "origins:and",
+		"actions": [{
+			"type": "origins:execute_command",
+			"permission_level": 4,
+			"command": "/scale reset @s"
+		}]
+	},
+	"entity_action_respawned": {
+		"type": "origins:and",
+		"actions": [{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:height 0.75 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:width 0.75 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:projectiles 0.75 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:motion 1.10 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:reach 1.10 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:drops 0.75 @s"
+			}
+		]
+	},
+	"entity_action_chosen": {
+		"type": "origins:and",
+		"actions": [{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:height 0.75 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:width 0.75 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:projectiles 0.75 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:motion 1.10 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:reach 1.10 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:drops 0.75 @s"
+			}
+		]
+	},
+	"entity_action_added": {
+		"type": "origins:and",
+		"actions": [{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:height 0.75 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:width 0.75 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:projectiles 0.75 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:motion 1.10 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:reach 1.10 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "/scale set pehkui:drops 0.75 @s"
+			}
+		]
+	}
+}

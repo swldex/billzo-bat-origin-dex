@@ -1,0 +1,18 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -3,
+    "max_stacks": 1,
+    "duration_per_stack": 50,
+    "tick_rate": 20,
+    "effect": {
+        "effect": "minecraft:blindness",
+        "is_ambient": true,
+        "show_particles": false,
+        "show_icon": false
+    },
+    "condition": {
+        "type": "origins:exposed_to_sun"
+    },
+"name": "Blind as a bat",
+"description": "Your eyes are not used to the bright light of day, making you blind."
+}
